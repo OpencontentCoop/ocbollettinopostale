@@ -83,7 +83,7 @@ class BollettinoOperator
                 {
                     $parameterKey = $operatorName == 'bollettinopostale_numero_conto_corrente' ? 'NumeroContoCorrente' : 'IntestatarioContoCorrente';
                     $operatorValue = eZINI::instance('bollettinopostale.ini')->variable('Settings', $parameterKey);
-                    if (class_exists('OCPaymentRecipient')){
+                    if (class_exists('OCPaymentRecipient') && in_array('ocpaymentrecipient', eZExtension::activeExtensions())){
                         /** @var eZOrder $order */
                         $order = $namedParameters['order'];
                         foreach ($order->productItems() as $product){
