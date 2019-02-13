@@ -1,0 +1,196 @@
+/****************************************************************************************
+ * Core paradoxpdf export CSS File
+ * Author : Mohamed Karnichi <www.tricinty.com>
+ ****************************************************************************************/
+
+/* Control page rendring: please refer to doc/doc.txt */
+@page {
+    size: a4 landscape;
+    margin: 0;
+    padding: 0;
+}
+
+div#background {
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+body{
+	font-family: monospace;	
+}
+
+div#background img{
+	width:100%;
+}
+
+.upper{
+	text-transform:uppercase;
+}
+
+.text-1{
+	font-size:15px;	
+	line-height:20px;	
+}
+
+.text-2{
+	font-size:13px;
+    line-height:20px;	
+}
+
+.text-3{
+	font-size:15px;
+	line-height:20px;
+}
+
+.text-4{
+	font-size:12px;
+	line-height:10px;
+}
+
+.text-5{
+	font-size:15px;
+	line-height:25px;
+}
+
+.text-1 span{
+	padding:0 2.3px 0 2.3px;
+}
+
+span.space{
+	visibility:hidden;
+	padding:0;
+	font-size:7px;
+}
+
+span.zero{
+	visibility: hidden;
+}
+
+#cc-1{
+	position:absolute;
+	left:118px;
+	top:50px;
+	width:160px;
+	height:15px;
+	overflow:hidden;
+	text-align:left;
+    line-height: 15px; 
+}
+
+#euro-1{
+	position:absolute;
+	left:340px;
+	top:45px;
+	text-align:right;
+}
+
+#intestato-1{
+	position:absolute;
+	left:118px;
+	top:95px;
+	width:365px;
+	height:30px;
+	overflow:hidden;
+	text-align:left;
+    line-height: 15px;    
+}
+
+#importo-1{
+	position:absolute;
+	left:148px;
+	top:70px;
+	width:335px;
+	height:15px;
+	overflow:hidden;
+	text-align:right;    
+}
+
+#causale-1{
+	position:absolute;
+	left:55px;
+	top:330px;
+	width:420px;
+	height:45px;
+	overflow:hidden;
+	text-align:left;    
+}
+#eseguito-1-nome{
+	position:absolute;
+	left:55px;
+	top:185px;
+	width:240px;
+	height:100px;
+	overflow:hidden;
+	text-align:left;    
+}
+
+#cc-2{
+	position:absolute;
+	left:630px;
+	top:48px;
+	width:245px;
+	height:15px;
+	overflow:hidden;
+	text-align:left;
+    line-height: 15px;    
+}
+
+#intestato-2{
+	position:absolute;
+	left:590px;
+	top:95px;
+	width:470px;
+	height:30px;
+	overflow:hidden;
+	text-align:left;
+    line-height: 15px;
+}
+
+#euro-2{
+	position:absolute;
+	left:934px;
+	top:45px;
+}
+
+#importo-2{
+	position:absolute;
+	left:670px;
+	top:70px;
+	width:390px;
+	height:15px;
+	overflow:hidden;
+	text-align:right;    
+}
+
+#causale-2{
+	position:absolute;
+	left:545px;
+	top:140px;
+	width:510px;
+	height:30px;
+	overflow:hidden;
+	text-align:left;    
+}
+
+#eseguito-2{
+	position:absolute;
+	left:723px;
+	top:190px;
+	width:330px;
+	height:105px;
+	overflow:hidden;
+	text-align:left;    
+}
+
+#cc-3{
+	position:absolute;
+	left:940px;
+	top:340px;
+	width:510px;
+	height:30px;
+	overflow:hidden;
+	text-align:left;    
+}
+
+#debug{position:absolute; z-index:10000; background-color:#fff; font-size:8px;}
