@@ -20,8 +20,8 @@
 	 $ordine_euro = monospace($order.total_inc_vat)
 	 $ordine_lettere_euro = transliteration($order.total_inc_vat)
 	 $ordine_causale = concat("numero ordine: ", $order.order_nr)
-     $numero_conto_corrente = ezini( 'Settings', 'NumeroContoCorrente', 'bollettinopostale.ini' )
-     $intestatario_conto_corrente = ezini( 'Settings', 'IntestatarioContoCorrente', 'bollettinopostale.ini' )
+     $numero_conto_corrente = bollettinopostale_numero_conto_corrente($order)
+     $intestatario_conto_corrente = bollettinopostale_intestatario_conto_corrente($order)
 }
 
 

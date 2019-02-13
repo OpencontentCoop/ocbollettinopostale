@@ -8,7 +8,13 @@ class OCBollettinoPostaleGateway extends eZPaymentGateway
     {
         $processParameters = $process->attribute( 'parameter_list' );
         $order = eZOrder::fetch( $processParameters['order_id'] );
-        $order->setStatus( 1000 );
+
+        $orderStatus = (int)eZINI::instance('bollettinopostale.ini')->variable('Settings', 'OrderStatus');
+        if ($orderStatus == 0){
+            $orderStatus = 1000;
+        }
+        $order->setStatus( $orderStatus );
+
         $order->store();
         return eZWorkflowType::STATUS_ACCEPTED;
     }
